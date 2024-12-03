@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eebde3;
+  padding: 10px 40px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border: solid blue;
+}
+
+.navbar-title {
+  font-size: 1.6em;
+  font-weight: bold;
+  width: 20%;
+  text-align: left;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: 0 20px; /* Espaçamento lateral para afastar do título e menu */
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 25px; /* Bordas mais arredondadas */
+  border: 1px solid #cccccccd;
+  margin-right: 10px; /* Espaçamento entre a barra de pesquisa e o botão */
+}
+
+.search-bar button {
+  padding: 7px 15px;
+  background-color: white;
+  border: none;
+  border-radius: 25px; /* Bordas mais arredondadas */
+  color: #2c1a74;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #2c1a74;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  padding: 0 15px; /* Adiciona espaçamento lateral para afastar das bordas */
+}
+
+.menu a {
+  flex: 1;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-align: center;
+  margin: 0 10px;
+  padding: 8px; /* Aumenta o padding para mais conforto */
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.menu a:hover {
+  background-color: #2c1a74;
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background-color: #2c1a74;
+  color: white;
+  font-size: 1em;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 25px; /* Formato mais oval */
+}
+
+.dropbtn:hover {
+  color: #eebde3;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2c1a74;
+  min-width: 150px;
+  box-shadow: 0.4px 8px #eebde3;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #eebde3;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+  padding: 20px;
+}
+
+.banner-image {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.banner-text {
+  max-width: 45%;
+  text-align: center;
+}
+
+.banner-text h1 {
+  font-size: 2.5em;
+  color: #2c1a74;
+}
+
+.banner-text p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.btn-ofertas {
+  display: inline-block;
+  background-color: #2c1a74;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px; /* Bordas mais arredondadas */
+  text-decoration: none;
+}
+
+.btn-ofertas:hover {
+  background-color: #eebde3;
+  color: #2c1a74;
+}
+
+.produtos-destaque {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.produtos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.produto {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  width: 250px;
+  border-radius: 15px; /* Formato mais arredondado */
+  background-color: #f9f9f9;
+}
+
+.produto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.produto h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.produto p {
+  color: #2c1a74;
+  font-weight: bold;
+}
+
+.produto button {
+  padding: 8px 15px;
+  background-color: #2c1a74;
+  color: white;
+  border: none;
+  border-radius: 25px; /* Formato mais oval */
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.produto button:hover {
+  background-color: #eebde3;
+  color: #2c1a74;
+}
+
+.rodape {
+  background-color: #2c1a74;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto; /* Garante que o rodapé fique sempre na parte inferior */
+}
+
+.rodape .links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.rodape .links a:hover {
+  text-decoration: underline;
+}
+
+.rodape .redes-sociais a img {
+  width: 30px;
+  margin: 0 5px;
+}
