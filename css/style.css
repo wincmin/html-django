@@ -8,6 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: 'Arial', sans-serif;
 }
 
 .navbar {
@@ -20,7 +21,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  border: solid blue;
+  border-bottom: 2px solid #2c1a74; /* Melhor visibilidade */
 }
 
 .navbar-title {
@@ -34,22 +35,22 @@ body {
   display: flex;
   align-items: center;
   width: 50%;
-  margin: 0 20px; /* Espaçamento lateral para afastar do título e menu */
+  margin: 0 20px; /* Espaçamento lateral */
 }
 
 .search-bar input {
   flex: 1;
   padding: 8px;
-  border-radius: 25px; /* Bordas mais arredondadas */
-  border: 1px solid #cccccccd;
-  margin-right: 10px; /* Espaçamento entre a barra de pesquisa e o botão */
+  border-radius: 25px;
+  border: 1px solid #cccccc;
+  margin-right: 10px;
 }
 
 .search-bar button {
   padding: 7px 15px;
   background-color: white;
   border: none;
-  border-radius: 25px; /* Bordas mais arredondadas */
+  border-radius: 25px;
   color: #2c1a74;
   cursor: pointer;
 }
@@ -64,7 +65,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 30%;
-  padding: 0 15px; /* Adiciona espaçamento lateral para afastar das bordas */
+  padding: 0 15px;
 }
 
 .menu a {
@@ -74,11 +75,10 @@ body {
   font-size: 1.2em;
   text-align: center;
   margin: 0 10px;
-  padding: 8px; /* Aumenta o padding para mais conforto */
+  padding: 8px;
   border-radius: 25px;
   transition: background-color 0.3s, color 0.3s;
 }
-
 
 .menu a:hover {
   background-color: #2c1a74;
@@ -97,7 +97,7 @@ body {
   border: none;
   cursor: pointer;
   width: 100%;
-  border-radius: 25px; /* Formato mais oval */
+  border-radius: 25px;
 }
 
 .dropbtn:hover {
@@ -133,6 +133,7 @@ body {
   justify-content: space-between;
   background-color: #f3f3f3;
   padding: 20px;
+  margin-top: 20px;
 }
 
 .banner-image {
@@ -161,7 +162,7 @@ body {
   background-color: #2c1a74;
   color: white;
   padding: 10px 20px;
-  border-radius: 25px; /* Bordas mais arredondadas */
+  border-radius: 25px;
   text-decoration: none;
 }
 
@@ -187,7 +188,7 @@ body {
   padding: 10px;
   text-align: center;
   width: 250px;
-  border-radius: 15px; /* Formato mais arredondado */
+  border-radius: 15px;
   background-color: #f9f9f9;
 }
 
@@ -212,7 +213,7 @@ body {
   background-color: #2c1a74;
   color: white;
   border: none;
-  border-radius: 25px; /* Formato mais oval */
+  border-radius: 25px;
   cursor: pointer;
   margin: 5px 0;
 }
@@ -227,7 +228,7 @@ body {
   color: white;
   padding: 20px;
   text-align: center;
-  margin-top: auto; /* Garante que o rodapé fique sempre na parte inferior */
+  margin-top: auto;
 }
 
 .rodape .links a {
@@ -241,6 +242,51 @@ body {
 }
 
 .rodape .redes-sociais a img {
-  width: 30px;
-  margin: 0 5px;
+  width: 29px;
+  margin: 17px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu a {
+    margin: 10px 0;
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-image {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .banner-text {
+    max-width: 80%;
+  }
+
+  .produtos {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .produto {
+    width: 100%;
+  }
 }
