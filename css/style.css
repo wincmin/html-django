@@ -173,6 +173,7 @@ body {
 
 .produtos-destaque {
   text-align: center;
+  background-image: url();
   margin: 20px 0;
 }
 
@@ -282,11 +283,81 @@ body {
   }
 
   .produtos {
-    flex-direction: column;
-    gap: 15px;
+    /* flex-direction: column; */
+    gap: 200px;
   }
 
   .produto {
     width: 100%;
   }
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos do contêiner principal */
+.landing-container {
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+/* Estilos do Carrossel */
+.carousel-container {
+  background-color: aqua;
+  /* background-position: 900px; */
+  border-radius: 100px;
+  height: 400px;
+  width: 500px;
+  max-width: 400px;
+  margin: 30px ;
+  /* justify-content: space-between; */
+  /* position: relative; */
+  overflow:visible; 
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Botões de Navegação */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 1.5em;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Pequenas melhorias no estilo */
+.carousel-container:hover .carousel-button {
+  background-color: rgba(0, 0, 0, 0.8);
 }
