@@ -1,16 +1,22 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minha Loja</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Boxmore</title>
+  <link rel="icon" href="img/loja1.png" type="image/png">
+  <link rel="stylesheet" href="css/menu.css">
 </head>
 <body class="body">
 
   <!-- Navbar -->
   <nav class="navbar">
-    <div class="navbar-title">Minha Loja</div>
+    <div class="navbar-title">Boxmore</div>
     <div class="search-bar">
       <input type="text" placeholder="Pesquisar produtos...">
       <button>🔍</button>
@@ -18,7 +24,7 @@
     <div class="menu">
       <a href="#minha-conta">Minha Conta</a>
       <a href="suporte.html">Suporte</a>
-      <a href="#carrinho">🛒</a>
+      <a href="carrinho.html">🛒</a>
       <div class="dropdown">
         <button class="dropbtn">Categorias</button>
         <div class="dropdown-content">
@@ -32,52 +38,53 @@
 
   <!-- Banner -->
   <div class="banner">
-    <img src="imagens/banner.jpg" alt="Promoções especiais" class="banner-image">
-    <div class="banner-text">
+    <img src="img/banner4.png" alt="Promoções especiais" class="banner-image">
+    <!-- <div class="banner-text">
       <h1>Bem-vindo à Minha Loja</h1>
       <p>Confira as ofertas imperdíveis de hoje!</p>
       <a href="#destaques" class="btn-ofertas">Ver Ofertas</a>
-    </div>
+    </div> -->
   </div>
+  <br> 
 
   <!-- Produtos em Promoção -->
   <section id="destaques" class="produtos-destaque">
     <h2>Produtos em Promoção</h2>
+    <br>
     <div class="produtos">
+      
       <div class="produto">
         <img src="imagens/produto1.jpg" alt="Produto 1">
         <h3>Produto 1</h3>
         <p>R$ 100,00</p>
-        <button>Comprar</button>
-        <button class="add-carrinho">Adicionar ao Carrinho</button>
+        <button class="add-carri
+        
+        nho">Adicionar ao Carrinho<a href="carrinho.html" alt="item-carrinho"></a></button>
       </div>
       <div class="produto">
         <img src="imagens/produto2.jpg" alt="Produto 2">
         <h3>Produto 2</h3>
         <p>R$ 200,00</p>
-        <button>Comprar</button>
         <button class="add-carrinho">Adicionar ao Carrinho</button>
       </div>
       <div class="produto">
         <img src="imagens/produto3.jpg" alt="Produto 3">
         <h3>Produto 3</h3>
         <p>R$ 300,00</p>
-        <button>Comprar</button>
         <button class="add-carrinho">Adicionar ao Carrinho</button>
       </div>
     </div>
   </section>
+  <br> <br>
 
-  <!-- Rodapé -->
   <footer class="rodape">
     <div class="info">
-      <h3>Minha Loja</h3>
+      <h3>Boxmore</h3>
       <p>© 2024 Todos os direitos reservados.</p>
     </div>
     <div class="links">
-      <a href="#sobre">Sobre Nós</a>
-      <a href="#ajuda">Ajuda</a>
-      <a href="#contato">Contato</a>
+      <a href="sobrenos.html">Sobre Nós</a>
+
     </div>
     <div class="redes-sociais">
       <a href="#"><img src="img/face.img" alt="Facebook"></a>

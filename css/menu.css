@@ -17,24 +17,26 @@ body {
   align-items: center;
   background-color: #eebde3;
   padding: 10px 40px;
-  color: white;
+  color: #2c1a74;
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-bottom: 2px solid #2c1a74; /* Melhor visibilidade */
+  /* border-bottom: 2px solid #2c1a74;  */
 }
 
 .navbar-title {
-  font-size: 1.6em;
-  font-weight: bold;
-  width: 20%;
+  font-size: 2.0em;
+  font-family: "Lobster", serif;
+  font-weight: 400;
+  font-style: bold;
+  width: 30%;
   text-align: left;
 }
 
 .search-bar {
   display: flex;
   align-items: center;
-  width: 50%;
+  width: 75%;
   margin: 0 20px; /* Espaçamento lateral */
 }
 
@@ -70,7 +72,7 @@ body {
 
 .menu a {
   flex: 1;
-  color: white;
+  color: #2c1a74;
   text-decoration: none;
   font-size: 1.2em;
   text-align: center;
@@ -127,21 +129,46 @@ body {
   display: block;
 }
 
+
 .banner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: #f3f3f3;
-  padding: 20px;
+  justify-content: center;
+  background-color: white;
   margin-top: 20px;
+  overflow: hidden;
+  height: auto; /* Ajuste a altura para 50% da altura da tela */
 }
 
 .banner-image {
-  width: 50%;
-  height: auto;
+  width: 70%;
+  height: auto; /* Mantém a proporção original da imagem */
+  object-fit: cover; 
   border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-out; 
 }
 
+
+
+
+.banner-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  animation: shadow-pop-tr 0.3s ease-out 2; 
+}
+
+@keyframes shadow-pop-tr {
+  0% {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.0);
+  }
+  50% {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+/* 
 .banner-text {
   max-width: 45%;
   text-align: center;
@@ -155,7 +182,7 @@ body {
 .banner-text p {
   font-size: 1.2em;
   margin: 10px 0;
-}
+} */
 
 .btn-ofertas {
   display: inline-block;
@@ -242,51 +269,8 @@ body {
 }
 
 .rodape .redes-sociais a img {
-  width: 29px;
-  margin: 17px;
+  width: 28px;
+  margin: 9px;
+  cursor:auto
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    padding: 20px 10px;
-  }
-
-  .search-bar {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  .menu {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .menu a {
-    margin: 10px 0;
-  }
-
-  .banner {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .banner-image {
-    width: 80%;
-    margin-bottom: 20px;
-  }
-
-  .banner-text {
-    max-width: 80%;
-  }
-
-  .produtos {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .produto {
-    width: 100%;
-  }
-}
