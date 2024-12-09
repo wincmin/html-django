@@ -1,0 +1,8 @@
+CREATE TABLE eletronicos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome_produto VARCHAR(100) NOT NULL,
+    preco DECIMAL(10,2) NOT NULL, -- Use DECIMAL para valores monetários com precisão
+    descricao VARCHAR(500) NOT NULL,
+    marca VARCHAR(100),
+    qntd INT NOT NULL
+);
